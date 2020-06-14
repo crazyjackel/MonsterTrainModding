@@ -4,9 +4,14 @@ using System.Text;
 using HarmonyLib;
 using MonsterTrainModdingAPI.Builders;
 using MonsterTrainModdingAPI.Managers;
+<<<<<<< Updated upstream
 using MonsterTrainModdingAPI.Enums.MTCardPools;
 using MonsterTrainModdingAPI.Enums.MTClans;
 using MonsterTrainModdingAPI.Enums;
+=======
+using MonsterTrainModdingAPI.Enums.MTClans;
+using MonsterTrainModdingAPI.Enums.MTCardPools;
+>>>>>>> Stashed changes
 
 namespace MonsterTrainTestMod.SamplePatches
 {

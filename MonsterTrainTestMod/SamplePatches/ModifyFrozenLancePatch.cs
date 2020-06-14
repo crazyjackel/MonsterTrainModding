@@ -14,6 +14,7 @@ namespace MonsterTrainTestMod.SamplePatches
 
         static void Prefix(ref CardData setCardData)
         {
+            /*
             if (!triggered && setCardData.GetName() == "Frozen Lance")
             {
                 triggered = true;
@@ -64,7 +65,7 @@ namespace MonsterTrainTestMod.SamplePatches
                 // Set Frozen Lance's damage to 4967
                 prop = typeof(CardEffectData).GetField("paramInt", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
                 prop.SetValue(setCardData.GetEffects()[0], 4967);
-            }
+            }*/
         }
     }
 }

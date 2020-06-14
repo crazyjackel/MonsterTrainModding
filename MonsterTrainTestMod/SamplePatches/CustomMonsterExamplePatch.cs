@@ -4,6 +4,10 @@ using System.Text;
 using HarmonyLib;
 using MonsterTrainModdingAPI.Builders;
 using MonsterTrainModdingAPI.Managers;
+<<<<<<< Updated upstream
+=======
+using MonsterTrainModdingAPI.Utilities;
+>>>>>>> Stashed changes
 using MonsterTrainModdingAPI.Enums.MTCardPools;
 using System.Linq;
 using UnityEngine;
@@ -16,7 +20,7 @@ namespace MonsterTrainTestMod.SamplePatches
         // Creates a 0-cost 3/4 with Train Steward's card art
         static void Postfix(ref SaveManager __instance)
         {
-            __instance.AddCardToDeck(CustomCardManager.GetCardDataByID("TestMod_BlueEyes"));
+            __instance.AddCardToDeck(CustomCardManager.GetCardDataByID("io.github.crazyjackel.SI"));
         }
     }
 
@@ -26,13 +30,17 @@ namespace MonsterTrainTestMod.SamplePatches
         {
             new CardDataBuilder
             {
-                CardID = "TestMod_BlueEyes",
-                Name = "Blue-Eyes White Dragon",
+                CardID = "io.github.crazyjackel.SI",
+                Name = "Shark Imp",
                 Cost = 0,
                 CardType = CardType.Monster,
                 TargetsRoom = true,
                 Targetless = false,
+<<<<<<< Updated upstream
                 AssetPath = "netstandard2.0/blueeyes.png",
+=======
+                BundleLoadingInfo = new AssetBundleLoadingInfo("testbundle", "SharkImp"),
+>>>>>>> Stashed changes
                 CardPoolIDs = new List<string> { MTCardPoolIDs.GetIDForType(typeof(MTCardPool_UnitsAllBanner)) },
                 EffectBuilders = new List<CardEffectDataBuilder>
                 {
@@ -42,12 +50,12 @@ namespace MonsterTrainTestMod.SamplePatches
                         TargetMode = TargetMode.DropTargetCharacter,
                         ParamCharacterDataBuilder = new CharacterDataBuilder
                         {
-                            CharacterID = "TestMod_Character_BlueEyes",
+                            CharacterID = "io.github.crazyjackel.BI_C",
                             Name = "Blue-Eyes White Dragon",
                             Size = 5,
                             Health = 2500,
                             AttackDamage = 3000,
-                            AssetPath = "netstandard2.0/blueeyes_character.png"
+                            SkeletonAnimationBundleLoadingInfo = new AssetBundleLoadingInfo("skeletondata","SkeleAnim")
                         }
                     }
                 },
