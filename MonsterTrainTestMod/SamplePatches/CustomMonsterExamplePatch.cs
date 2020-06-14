@@ -4,10 +4,7 @@ using System.Text;
 using HarmonyLib;
 using MonsterTrainModdingAPI.Builders;
 using MonsterTrainModdingAPI.Managers;
-<<<<<<< Updated upstream
-=======
 using MonsterTrainModdingAPI.Utilities;
->>>>>>> Stashed changes
 using MonsterTrainModdingAPI.Enums.MTCardPools;
 using System.Linq;
 using UnityEngine;
@@ -36,11 +33,7 @@ namespace MonsterTrainTestMod.SamplePatches
                 CardType = CardType.Monster,
                 TargetsRoom = true,
                 Targetless = false,
-<<<<<<< Updated upstream
-                AssetPath = "netstandard2.0/blueeyes.png",
-=======
                 BundleLoadingInfo = new AssetBundleLoadingInfo("testbundle", "SharkImp"),
->>>>>>> Stashed changes
                 CardPoolIDs = new List<string> { MTCardPoolIDs.GetIDForType(typeof(MTCardPool_UnitsAllBanner)) },
                 EffectBuilders = new List<CardEffectDataBuilder>
                 {
