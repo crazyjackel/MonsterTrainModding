@@ -48,7 +48,8 @@ namespace MonsterTrainTestMod.SamplePatches
                             Size = 5,
                             Health = 2500,
                             AttackDamage = 3000,
-                            SkeletonAnimationBundleLoadingInfo = new AssetBundleLoadingInfo("skeletondata","SkeleAnim")
+                            SkeletonAnimationBundleLoadingInfo = new AssetBundleLoadingInfo("skeletondata","SkeleAnim"),
+                            SpriteBundleLoadingInfo = new AssetBundleLoadingInfo("skeletondata","SharkImp")
                         }
                     }
                 },
